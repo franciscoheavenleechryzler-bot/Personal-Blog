@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Blog</title>
+<style>
+body {
+    background-color: #F4F1DE;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3D405B;
+    line-height: 1.7;
+    scroll-behavior: smooth; /* smooth scroll for links */
+}
+
+/* Header */
+header {
+    background-color: #E07A5F;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #2A9D8F;
+    object-fit: cover;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Grid Layout for Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Main Cards */
+.card {
+    background-color: white;
+    padding: 35px 20px;
+    border-left: 8px solid #2A9D8F;
+    border-right: 8px solid #2A9D8F;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A4F7A;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Gallery Box (centered) */
+.gallery-box {
+    text-align: center;
+    margin: 20px auto; 
+}
+
+.gallery-box .card {
+    display: inline-block; 
+    width: 100%;            
+    max-width: 460px;     
+    margin: 0 auto;
+}
+
+/* Blog Boxes */
+.blog-box {
+    background-color: white;
+    border-left: 8px solid #2A9D8F;
+    border-right: 8px solid #2A9D8F;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    scroll-margin-top: 150px; /* offset for in-page links */
+}
+
+.blog-box h2 {
+    color: #2A9D8F;
+    margin-bottom: 15px;
+}
+
+.blog-box p {
+    text-indent: 40px;
+    margin-bottom: 12px;
+}
+
+/* Section Images - Circular and fit full image */
+.section-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;           /* circle */
+    border: 5px solid #2A9D8F;
+    object-fit: contain;           /* fit full image inside circle */
+    background-color: #F4F1DE;    /* optional: show background for empty space */
+}
+
+/* Back to Top Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #2A9D8F;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #21867a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 60px 0 20px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Top anchor for Back to Top -->
+<a id="top"></a>
+
+<header>My Personal Blog</header>
+
+<!-- Profile Picture Space -->
+<div class="profile">
+    <img src="profile.jpg" alt="My Picture">
+    <p>Heaven Lee</p>
+</div>
+
+<div class="container">
+
+    <!-- LEFT & RIGHT BOXES -->
+    <div class="card-grid">
+        <a href="#childhood" class="card">Childhood Years</a>
+        <a href="Page2.html" class="card">Technology Blog</a>
+
+        <a href="#teenage" class="card">Teenage Years</a>
+        <a href="Page3.html" class="card">Personal Blog</a>
+
+        <a href="#college" class="card">College Years</a>
+        <a href="Page4.html" class="card">Career and Future Goals</a>
+    </div>
+
+    <!-- MIDDLE GALLERY BOX -->
+    <div class="gallery-box">
+        <a href="Page5.html" class="card">📸 Gallery</a>
+    </div>
+
+</div>
+
+<!-- Childhood -->
+<div class="container blog-box" id="childhood">
+    <h2>Childhood Years</h2>
+    <div class="section-photo">
+        <img src="childhood.jpg" alt="Childhood Picture">
+    </div>
+    <p>My childhood was not very free because I had many strict rules at home. I could only use gadgets on weekends, which made weekdays feel long and sometimes boring. Since I couldn’t use gadgets often, I had to look for other activities to entertain myself.</p>
+    <p>I was also not allowed to go outside, and that rule made me feel limited and restless. Even with that restriction, I still went out occasionally to play with my neighbors and friends because I wanted to enjoy being a kid. I studied in a public school, and I still remember how hot the classrooms were during summer. My classmates and I would crowd around the electric fan just to feel even a small breeze.</p>
+    <p>My first gadget was a PSP, and later I had access to a computer, but they were not really mine since they belonged to my older brother. He would only let me borrow them, which made the experience both exciting and frustrating. In grade school, I was often punished by my teacher for being noisy during class. My usual punishment was having to stand in the corner while everyone else continued the lesson. I felt embarrassed every time, yet I never managed to completely stop talking because I enjoyed chatting with my classmates.</p>
+    <p>Even though I wasn’t allowed to roam far, my parents let me visit my friend’s house because it was close and just outside the school. I would go there after class to play games and relax for a while before heading home. Those visits made me feel happier because they gave me a break from the strict rules I had at home. Despite having so many limits, I still found small ways to enjoy my childhood. I learned to appreciate simple things like playing outside for a short time or sharing a gadget with my brother. The memories of punishments, laughter, and small acts of freedom are things I still remember clearly. My childhood may not have been perfect, but it helped shape who I am today. It also taught me to value little moments of fun and the small pieces of freedom I was given.</p>
+    <a href="#top" class="back-button">⬆ Back to Top</a>
+</div>
+
+<!-- Teenage -->
+<div class="container blog-box" id="teenage">
+    <h2>Teenage Years</h2>
+    <div class="section-photo">
+        <img src="teenage.jpg" alt="Teenage Picture">
+    </div>
+    <p>During my teenage years, I started to have a new circle of friends because my childhood friends went to different schools. I noticed that I barely talked to my old friends anymore since we didn’t see each other much. I remember spending a lot of time with my new friends after class. We always played together and sometimes went straight to the computer shop right after school. I enjoyed those afternoons even if it meant going home a bit late. One time, someone snitched on me and told the teacher that I kept going to the computer shop after school. The teacher reported it to my mom, and my parents got really angry at me. I felt scared that time because I didn’t expect them to find out in that way.</p>
+    <p>In our school, there was also a mini fair every year where they brought carnival rides and inflatables. I still remember going to the inflatable with my friends and they chased me inside and took me down playfully. It was one of the funniest memories I had from those years. We also played with water guns during the fair even though it wasn’t allowed. The vice principal got mad at us because we used the water guns on the school grounds. I also remember in 2018 when my computer got a virus because I downloaded many things I wasn’t supposed to. After that, I had no way to play games except by borrowing my brother’s iPad. I felt sad because I couldn’t do the things I liked as much as before. My teenage years were full of fun moments but also some scolding and trouble. Looking back, I think I was really carefree during those times. But everything changed when the pandemic happened. My teenage years suddenly got cut off, and everything became quiet. I only remember around four years of it since the rest was just staying home. It felt like not a lot happened because life suddenly stopped.</p>
+    <a href="#top" class="back-button">⬆ Back to Top</a>
+</div>
+
+<!-- College -->
+<div class="container blog-box" id="college">
+    <h2>College Years</h2>
+    <div class="section-photo">
+        <img src="college.jpg" alt="College Picture">
+    </div>
+    <p>My college life just started, and it hasn’t even been two years since I entered college. I can say that not really a lot has happened so far. In my first year, I met a new friend who became close to me fast. He had the same humor as me, so we understood each other easily. I remember thinking that college was not going to be hard. I told myself that my course wasn’t as difficult as the ones my teenage friends picked. Some of them took engineering and architecture, and I thought their courses were much harder than mine. Because of this, I believed my college life would be simple and relaxed.</p>
+    <p>I only realized later that I was wrong to think like that. I thought college would be easy because my friend told me her older brother was always free in college. She said he had so much free time that he was always drinking beer with her barkada. I didn’t realize that my own college schedule would reach almost twelve hours in one day. I struggled a lot because managing my time became hard for me. It was even worse because sometimes I had insomnia and couldn’t sleep properly. When my second year started, I met another new friend. He didn’t have the same humor as me and my first friend, but it was okay. I still liked hanging out with him because he was fun in his own way. College life has been tiring, but it is also helping me grow. Even if I complain sometimes, I know these experiences will help me in the future. I am still learning and adjusting, but I hope the next years become a bit easier for me.</p>
+    <a href="#top" class="back-button">⬆ Back to Top</a>
+</div>
+
+<footer>© 2026 Heaven Lee Chryzler R. Francisco</footer>
+
+</body>
+</html>

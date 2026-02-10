@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Gallery</title>
+<style>
+body {
+    background-color: #F4F1DE;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3D405B;
+}
+
+/* Header */
+header {
+    background-color: #E07A5F;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Home Button */
+.home-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2A9D8F;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #21867a;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Photo Boxes */
+.photo-box {
+    background-color: white;
+    border-left: 8px solid #2A9D8F;
+    border-right: 8px solid #2A9D8F;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Square Images */
+.photo-box img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover Effect */
+.photo-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Captions */
+.photo-box p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #3A4F7A;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 60px 0 20px 0;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>My Gallery</header>
+
+<!-- Home Button -->
+<div style="text-align:center;">
+    <a href="index.html" class="home-button">🏠 Home</a>
+</div>
+
+<div class="container">
+    <div class="gallery-grid">
+        <div class="photo-box">
+            <a href="profile.jpg" target="_blank"><img src="profile.jpg" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="childhood.jpg" target="_blank"><img src="childhood.jpg" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="teenage.jpg" target="_blank"><img src="teenage.jpg" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="college.jpg" target="_blank"><img src="college.jpg" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="technology.webp" target="_blank"><img src="technology.webp" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="personal.jpg" target="_blank"><img src="personal.jpg" alt=""><p></p></a>
+        </div>
+        <div class="photo-box">
+            <a href="career.avif" target="_blank"><img src="career.avif" alt=""><p></p></a>
+        </div>
+    </div>
+</div>
+
+<footer>© 2026 Heaven Lee Chryzler R. Francisco</footer>
+
+</body>
+</html>
